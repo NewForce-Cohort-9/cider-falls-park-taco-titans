@@ -1,4 +1,3 @@
-
 const database = {
     destinations: [
         {
