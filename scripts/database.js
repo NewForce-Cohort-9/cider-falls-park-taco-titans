@@ -1,124 +1,274 @@
 const database = {
-    parkAreas: [
+    destinations: [
         {
             id: 1,
             name: "Chamfort River",
             location: "Northeast",
-            attraction: "River"
         },
         {
             id: 2,
             name: "Lost Wolf Hiking Trail",
             location: "North",
-            attraction: "Trail"
         },
         {
             id: 3,
             name: "Lodge",
             location: "Northwest",
-            attraction: ["Lodge", "Hotel", "Restaurant"]
         },
         {
             id: 4,
             name: "Gander River",
             location: "Southwest",
-            attraction: "Nature Preserve"
         },
         {
             id: 5,
             name: "Campgrounds",
             location: "South",
-            attraction: ["Campgrounds", "Office Park", "Children Play Area"]
         },
         {
             id: 6,
             name: "Pine Bluff Trails",
             location: "Southeast",
-            attractions: ["Trails", "Food Vendors"]
         }
     ],
     guests: [
         {
             id: 1, 
             name: "Colonel Mustard",
-            areaId: 1
+            destinationId: 1
         },
         {
             id: 2, 
             name: "Professor Plum",
-            areaId: 2
+            destinationId: 2
         },
         {
             id: 3, 
             name: "Mrs. White",
-            areaId: 3
+            destinationId: 3
         },
         {
             id: 4, 
             name: "Ms. Scarlett",
-            areaId: 4
+            destinationId: 4
         },
         {
             id: 5, 
             name: "Reverend Green",
-            areaId: 5
+            destinationId: 5
         },
         {
             id: 6, 
             name: "Mrs. Peach",
-            areaId: 6
+            destinationId: 6
         }
     ],
     services: [
         {
             id: 1,
-            name: "Rafting",
-            areaId: 1
+            name: "Rafting"
         },
         {
             id: 2,
-            name: "Canoeing",
-            areaId: 1
+            name: "Canoeing"
         },
         {
             id: 3,
-            name: "Fishing",
-            areaId: [1, 4]
+            name: "Fishing"
         },
         {
             id: 4,
-            name: "Hiking",
-            areaId: [2, 4, 6]
+            name: "Hiking"
         },
         {
             id: 5,
-            name: "Picnicking",
-            areaId: [2, 3, 6]
+            name: "Picnicking"
         },
         {
             id: 6,
-            name: "Rock Climbing",
-            areaId: 2 
+            name: "Rock Climbing"
         },
         {
             id: 7,
-            name: "Lodging",
-            areaId: [3, 5]
+            name: "Lodging"
         },
         {
             id: 8,
-            name: "Parking",
-            areaId: [3, 5]
+            name: "Parking"
         },
         {
             id: 9,
-            name: "Information",
-            areaId: [3, 5]
+            name: "Information"
         },
         {
             id: 10,
-            name: "Zip Lines",
-            areaId: 6
+            name: "Zip Lines"
+        }
+    ],
+    locationServices: [
+        {
+            id: 1,
+            destinationId: 1,
+            serviceId: 1
+        },
+        {
+            id: 2,
+            destinationId: 1,
+            serviceId: 2
+        },
+        {
+            id: 3,
+            destinationId: 1,
+            serviceId: 3
+        },
+        {
+            id: 4,
+            destinationId: 2,
+            serviceId: 4
+        },
+        {
+            id: 5,
+            destinationId: 2,
+            serviceId: 5
+        },
+        {
+            id: 6,
+            destinationId: 2,
+            serviceId: 6
+        },
+        {
+            id: 7,
+            destinationId: 3,
+            serviceId: 7
+        },
+        {
+            id: 8,
+            destinationId: 3,
+            serviceId: 8
+        },
+        {
+            id: 9,
+            destinationId: 3,
+            serviceId: 9
+        },
+        {
+            id: 10,
+            destinationId: 3,
+            serviceId: 5
+        },
+        {
+            id: 11,
+            destinationId: 4,
+            serviceId: 3
+        },
+        {
+            id: 12,
+            destinationId: 4,
+            serviceId: 4
+        },
+        {
+            id: 13,
+            destinationId: 5,
+            serviceId: 9
+        },
+        {
+            id: 14,
+            destinationId: 5,
+            serviceId: 7
+        },
+        {
+            id: 15,
+            destinationId: 5,
+            serviceId: 8
+        },
+        {
+            id: 16,
+            destinationId: 6,
+            serviceId: 4
+        },
+        {
+            id: 17,
+            destinationId: 6,
+            serviceId: 5
+        },
+        {
+            id: 18,
+            destinationId: 6,
+            serviceId: 10
+        }
+    ],
+    attractions: [
+        {
+            id: 1,
+            name: "Lodge"
+        },
+        {
+            id: 2,
+            name: "Hotel"
+        },
+        {
+            id: 3,
+            name: "Restaurant"
+        },
+        {
+            id: 4,
+            name: "Campgrounds"
+        },
+        {
+            id: 5,
+            name: "Office Park"
+        },
+        {
+            id: 6,
+            name: "Children Play Areas"
+        },
+        {
+            id: 7,
+            name: "Food Vendors"
+        }
+    ],
+    attractionServices: [
+        {
+            id: 1,
+            destinationId: 3,
+            attractionId: 1,
+            mainAttraction: true
+        },
+        {
+            id: 2,
+            destinationId: 3,
+            attractionId: 2,
+            mainAttraction: false
+        },
+        {
+            id: 3,
+            destinationId: 3,
+            attractionId: 3,
+            mainAttraction: false
+        },
+        {
+            id: 4,
+            destinationId: 5,
+            attractionId: 4,
+            mainAttraction: true
+        },
+        {
+            id: 5,
+            destinationId: 5,
+            attractionId: 5,
+            mainAttraction: false
+        },
+        {
+            id: 6,
+            destinationId: 5,
+            attractionId: 6,
+            mainAttraction: false
+        },
+        {
+            id: 7,
+            destinationId: 6,
+            attractionId: 7,
+            mainAttraction: false
         }
     ]
 }
@@ -127,10 +277,22 @@ export const getGuests = () => {
     return database.guests.map(guests => ({...guests}));
 }
 
-export const getParkAreas = () => {
-    return database.parkAreas.map(parkAreas => ({...parkAreas}));
+export const getDestinations = () => {
+    return database.destinations.map(destinations => ({...destinations}));
 }
 
 export const getServices = () => {
     return database.services.map(services => ({...services}));
+}
+
+export const getLocationServices = () => {
+    return database.locationServices.map(locationServices => ({...locationServices}));
+}
+
+export const getAttractions = () => {
+    return database.attractions.map(attractions => ({...attractions}));
+}
+
+export const getAttractionServices = () => {
+    return database.attractionServices.map(attractionServices => ({...attractionServices}));
 }
