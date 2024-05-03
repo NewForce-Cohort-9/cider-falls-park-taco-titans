@@ -41,31 +41,37 @@ const database = {
         {
             id: 1, 
             name: "Colonel Mustard",
+            weapon: "knife",
             destinationId: 1
         },
         {
             id: 2, 
             name: "Professor Plum",
+            weapon: "candlestick",
             destinationId: 2
         },
         {
             id: 3, 
             name: "Mrs. White",
+            weapon: "wrench",
             destinationId: 3
         },
         {
             id: 4, 
             name: "Ms. Scarlett",
+            weapon: "lead pipe",
             destinationId: 4
         },
         {
             id: 5, 
             name: "Reverend Green",
+            weapon: "dagger",
             destinationId: 5
         },
         {
             id: 6, 
             name: "Mrs. Peach",
+            weapon: "revolver",
             destinationId: 6
         }
     ],

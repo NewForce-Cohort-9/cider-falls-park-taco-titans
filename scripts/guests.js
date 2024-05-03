@@ -12,7 +12,7 @@ document.addEventListener(
                 if (parseInt(itemClicked.dataset.id) === guest.id) {
                     for (const destination of destinations) {
                         if (parseInt(itemClicked.dataset.destination) === destination.id) {
-                            window.alert(`${itemClicked.dataset.name} is currently visiting the ${destination.name}.`)
+                            window.alert(`${itemClicked.dataset.name} is currently at the ${destination.name} and is holding a ${guest.weapon}.`)
                         }
                     }
                 }

@@ -118,6 +118,7 @@ footer {
 
 .destinationServices {
     text-align: center;
+}
 
 .asideGuests {
     display: flex;
@@ -127,5 +128,4 @@ footer {
 .topLists {
     display: flex;
     justify-content: space-between;
-
 }
