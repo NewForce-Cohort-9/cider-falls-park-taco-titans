@@ -1,0 +1,59 @@
+
+body {
+    background-color: rgb(216, 213, 132);
+    color: rgba(255, 255, 255, 0.971);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* .countrypage {
+    display: flex;
+    justify-content: space-between;
+} */
+
+ .destinations {
+    display: flex;
+    flex-direction: row; 
+    padding: 20px; 
+    justify-content: space-evenly;
+}  
+
+.destinationsTwo {
+    display: flex;
+    flex-direction: row; 
+    padding: 20px; 
+    justify-content: space-evenly;
+}  
+
+.containerOne {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding-top: 50px; 
+}
+
+.containerTwo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding-top: 50px; 
+}
+
+/* .container img {
+    width: 500px;
+} */
+
+.button {
+    margin-top: 20px;
+    background-color: rgb(202, 202, 202);
+    padding: 10px;
+    border-style: solid;   
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px; 
+    font-size: small;
+    font-family: Verdana;
+    font-weight: bold;
+}
