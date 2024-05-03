@@ -1,5 +1,5 @@
 // Import function that returns a copy of the destinations and guests portion of the database
-import { getDestinations, getGuests } from "./database.js";
+import { getDestinations, getGuests, getServices, getLocationServices } from "./database.js";
 
 // Invoke function that returns a copy of the guests portion of the database
 const guests = getGuests();
@@ -52,12 +52,50 @@ export const destinationsHTML = () => {
     // Invoke function that returns the destinations portion of database
     const destinations = getDestinations();
 
-    // Iterate through destinations array to extract info we want to display
+    //Invoke functions that return the locationservices and services portion of the database
+    const locationServices = getLocationServices();
+    const services = getServices();
+
+    // Declare an empty array to store info about where services are offered
+    let locationServiceArray = [];
+
+    // Iterate through destinations array
     for (const destination of destinations) {
+        // Declare an empty string to begin building a message about which services are offered
+        let message = "";
+        // Iterate through locationServices to match up with the destination id from destinations above
+        for (const location of locationServices) {
+
+            // Search for the service by matching destination id from destinations and locationServices array to use the servicesId pulled from locationServices array
+            if (destination.id === location.destinationId) {
+                const service = services.find(service => service.id === location.serviceId);
+                
+                // Pull the name of the service associated with the destination
+                message += `${service.name} `;
+            }
+        }
+        // Store the services associated with the destination in the array
+        locationServiceArray.push(message);
+    }
+
+    // Iterate through the first three destinations in the destinations array to display them in their proper geographic location
+    for (let i = 2; i >= 0; i--) {
         // Display destination name in the html, assign each li's dataset a type of destination and id of the destination to be used in the event listener
         htmlString += `<div class="destinationCard">
-        <figure class="destinationImg"><img src="${destination.image}" alt="Photo of ${destination.name}"></figure>
-        <p class="destination" data-type="destination" data-id="${destination.id}">${destination.name}</p>
+        <figure class="destinationImg"><img src="${destinations[i].image}" alt="Photo of ${destinations[i].name}"></figure>
+        <p class="destination" data-type="destination" data-id="${destinations[i].id}">${destinations[i].name}</p>
+        <p class="destinationServices">Services:</p>
+        <p class="destinationServices">${locationServiceArray[i]}</p>
+        </div>`;
+    }
+    // Iterate through the last three destinations in the destinations array to display them in their proper geographic location
+    for (let i = 3; i <= 5; i++) {
+        // Display destination name in the html, assign each li's dataset a type of destination and id of the destination to be used in the event listener
+        htmlString += `<div class="destinationCard">
+        <figure class="destinationImg"><img src="${destinations[i].image}" alt="Photo of ${destinations[i].name}"></figure>
+        <p class="destination" data-type="destination" data-id="${destinations[i].id}">${destinations[i].name}</p>
+        <p class="destinationServices">Services:</p>
+        <p class="destinationServices">${locationServiceArray[i]}</p>
         </div>`;
     }
 
