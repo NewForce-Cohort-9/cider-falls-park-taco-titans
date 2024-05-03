@@ -200,30 +200,22 @@ const database = {
     attractions: [
         {
             id: 1,
-            name: "Lodge"
-        },
-        {
-            id: 2,
             name: "Hotel"
         },
         {
-            id: 3,
+            id: 2,
             name: "Restaurant"
         },
         {
-            id: 4,
-            name: "Campgrounds"
-        },
-        {
-            id: 5,
+            id: 3,
             name: "Office Park"
         },
         {
-            id: 6,
+            id: 4,
             name: "Children Play Areas"
         },
         {
-            id: 7,
+            id: 5,
             name: "Food Vendors"
         }
     ],
@@ -232,7 +224,7 @@ const database = {
             id: 1,
             destinationId: 3,
             attractionId: 1,
-            mainAttraction: true
+            mainAttraction: false
         },
         {
             id: 2,
@@ -242,32 +234,20 @@ const database = {
         },
         {
             id: 3,
-            destinationId: 3,
+            destinationId: 5,
             attractionId: 3,
-            mainAttraction: false
+            mainAttraction: true
         },
         {
             id: 4,
             destinationId: 5,
             attractionId: 4,
-            mainAttraction: true
+            mainAttraction: false
         },
         {
             id: 5,
-            destinationId: 5,
-            attractionId: 5,
-            mainAttraction: false
-        },
-        {
-            id: 6,
-            destinationId: 5,
-            attractionId: 6,
-            mainAttraction: false
-        },
-        {
-            id: 7,
             destinationId: 6,
-            attractionId: 7,
+            attractionId: 5,
             mainAttraction: false
         }
     ]

@@ -1,11 +1,17 @@
 import { Services } from "./services.js"
+import { guestList } from "./guests.js"
+import { attractionList } from "./attractions.js"
 
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
     <section class="detail--column list details__services">
         <h2>Services:</h2>
-        ${Services()}
+        ${Services()} 
+        <h2>Attractions:</h2>
+        ${attractionList()} 
+        <h2>Guests:</h2>
+        ${guestList()}
     </section>
 </article>
 
