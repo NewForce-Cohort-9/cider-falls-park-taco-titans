@@ -9,10 +9,6 @@ h1 {
     text-align: center;
 }
 
-/* .countrypage {
-    display: flex;
-    justify-content: space-between;
-} */
 
  .destinations {
     display: flex;
@@ -42,9 +38,6 @@ h1 {
     padding-top: 50px; 
 }
 
-/* .container img {
-    width: 500px;
-} */
 
 .button {
     margin-top: 20px;
@@ -86,4 +79,9 @@ h1 {
 img {
     width: 200px;
     height: auto;
+}
+
+.aside {
+    display: flex;
+    justify-content: right;
 }
