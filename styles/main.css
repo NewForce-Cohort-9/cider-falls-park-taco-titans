@@ -1,6 +1,10 @@
 
 body {
-    background-color: rgb(216, 213, 132);
+    background-image: url(../images/AdobeStock_254764739.jpeg);
+    background-position:fixed; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-color: rgb(0, 0, 0);
     color: rgba(255, 255, 255, 0.971);
     font-family: Arial, sans-serif;
     margin: 0;
@@ -114,6 +118,7 @@ footer {
 
 .destinationServices {
     text-align: center;
+}
 
 .asideGuests {
     display: flex;
@@ -123,5 +128,4 @@ footer {
 .topLists {
     display: flex;
     justify-content: space-between;
-
 }
