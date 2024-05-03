@@ -13,7 +13,7 @@ document.addEventListener(
             if (parseInt(itemClicked.dataset.id) === attractionService.attractionId) {
                 for (const destination of destinations) {
                     if (destination.id === attractionService.destinationId) {
-                        console.log(`The ${itemClicked.dataset.name} can be found at the ${destination.name}`)
+                        window.alert(`The ${itemClicked.dataset.name} can be found at the ${destination.name}`)
                     }
                 }
             }
