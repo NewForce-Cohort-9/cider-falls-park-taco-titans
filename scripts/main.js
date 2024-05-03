@@ -1,6 +1,5 @@
 import { Services } from "./services.js"
 
-
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
@@ -12,5 +11,4 @@ const applicationHTML = `
 
 
 `
-
 mainContainer.innerHTML = applicationHTML
