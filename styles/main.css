@@ -11,10 +11,6 @@ h1 {
     text-align: center;
 }
 
-/* .countrypage {
-    display: flex;
-    justify-content: space-between;
-} */
 
  .destinations {
     display: flex;
@@ -30,7 +26,7 @@ h1 {
     justify-content: space-evenly;
 }  
 
-.containerOne {
+/* .containerOne {
     display: flex;
     flex-direction: row; 
     align-items: center;
@@ -42,13 +38,10 @@ h1 {
     flex-direction: row; 
     align-items: center;
     padding-top: 50px; 
-}
-
-/* .container img {
-    width: 500px;
 } */
 
-.button {
+
+/* .button {
     margin-top: 20px;
     background-color: rgb(202, 202, 202);
     padding: 10px;
@@ -58,7 +51,7 @@ h1 {
     font-size: small;
     font-family: Verdana;
     font-weight: bold;
-}
+} */
 
 .destination {
     text-align: center;
@@ -69,7 +62,7 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 80%;
+    width: 50%;
 }
 
 .destinationCard {
@@ -121,4 +114,14 @@ footer {
 
 .destinationServices {
     text-align: center;
+
+.asideGuests {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topLists {
+    display: flex;
+    justify-content: space-between;
+
 }
