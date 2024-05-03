@@ -52,12 +52,20 @@ export const destinationsHTML = () => {
     // Invoke function that returns the destinations portion of database
     const destinations = getDestinations();
 
-    // Iterate through destinations array to extract info we want to display
-    for (const destination of destinations) {
+    // Iterate through the first three destinations in the destinations array to display them in their proper geographic location
+    for (let i = 2; i >= 0; i--) {
         // Display destination name in the html, assign each li's dataset a type of destination and id of the destination to be used in the event listener
         htmlString += `<div class="destinationCard">
-        <figure class="destinationImg"><img src="${destination.image}" alt="Photo of ${destination.name}"></figure>
-        <p class="destination" data-type="destination" data-id="${destination.id}">${destination.name}</p>
+        <figure class="destinationImg"><img src="${destinations[i].image}" alt="Photo of ${destinations[i].name}"></figure>
+        <p class="destination" data-type="destination" data-id="${destinations[i].id}">${destinations[i].name}</p>
+        </div>`;
+    }
+    // Iterate through the last three destinations in the destinations array to display them in their proper geographic location
+    for (let i = 3; i <= 5; i++) {
+        // Display destination name in the html, assign each li's dataset a type of destination and id of the destination to be used in the event listener
+        htmlString += `<div class="destinationCard">
+        <figure class="destinationImg"><img src="${destinations[i].image}" alt="Photo of ${destinations[i].name}"></figure>
+        <p class="destination" data-type="destination" data-id="${destinations[i].id}">${destinations[i].name}</p>
         </div>`;
     }
 

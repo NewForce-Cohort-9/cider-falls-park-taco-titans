@@ -3,6 +3,8 @@ body {
     background-color: rgb(216, 213, 132);
     color: rgba(255, 255, 255, 0.971);
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -86,4 +88,33 @@ h1 {
 img {
     width: 200px;
     height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #228B22; */
+    border-bottom: solid;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 1em;
+}
+
+footer {
+    margin: 0px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: slategray;
+    position: sticky;
+    left: 0;
+    right: 100;
+    padding: 1em;
 }
