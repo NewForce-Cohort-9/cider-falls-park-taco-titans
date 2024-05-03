@@ -57,3 +57,33 @@ h1 {
     font-family: Verdana;
     font-weight: bold;
 }
+
+.destination {
+    text-align: center;
+}
+
+.destinationList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.destinationCard {
+    margin: 1em;
+    background-color: slategray;
+    border: solid;
+    border-radius: 10px;
+    width: 250px;
+    flex-basis: 25%;
+}
+
+.destinationImg {
+    align-self: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}

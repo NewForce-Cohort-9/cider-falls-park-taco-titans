@@ -4,31 +4,37 @@ const database = {
             id: 1,
             name: "Chamfort River",
             location: "Northeast",
+            image: "https://t3.ftcdn.net/jpg/01/13/46/78/360_F_113467839_JA7ZqfYTcIFQWAkwMf3mVmhqXr7ZOgEX.jpg"
         },
         {
             id: 2,
             name: "Lost Wolf Hiking Trail",
             location: "North",
+            image: "https://www.travelandleisure.com/thmb/juPgMzQuYkcjfVHWVwdoGxZkDoE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-tour-du-mont-blanc-WORLDHIKES0523-ecb102509c2e47b18b8cdd6aec848db2.jpg"
         },
         {
             id: 3,
             name: "Lodge",
             location: "Northwest",
+            image: "https://media.cntraveler.com/photos/61ee406bfe18edcbd885cb51/16:9/w_2560,c_limit/WhitefaceLodge-Lake-Placid-NY.jpg"
         },
         {
             id: 4,
             name: "Gander River",
             location: "Southwest",
+            image: "https://cdn.pixabay.com/photo/2020/05/04/16/05/mckenzie-river-5129717_640.jpg"
         },
         {
             id: 5,
             name: "Campgrounds",
             location: "South",
+            image: "https://www.nps.gov/grte/planyourvisit/images/JLCG_tents_Teewinot_2008_mattson_1.JPG?maxwidth=1300&maxheight=1300&autorotate=false"
         },
         {
             id: 6,
             name: "Pine Bluff Trails",
             location: "Southeast",
+            image: "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?cs=srgb&dl=pexels-andreimike-1271619.jpg&fm=jpg"
         }
     ],
     guests: [
