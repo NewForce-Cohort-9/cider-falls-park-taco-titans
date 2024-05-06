@@ -9,7 +9,7 @@ const mainContainer = document.querySelector("#container")
 const applicationHTML = `
 <section class="topLists">
     <section class="destinations">${destinationsHTML()}</section>
-    <section> <h2 class="asideGuests">Guests:</h2>${guestList()} </section>
+    <section class="asideGuestSection"><h2 class="asideGuests">Guests</h2>${guestList()}</section>
     </section>
 
 
