@@ -93,7 +93,8 @@ header {
     justify-content: flex-start;
     align-items: center;
     /* background-color: #228B22; */
-    border-bottom: solid;
+    background-color: aliceblue;opacity: .4;
+    color: black;
 }
 
 .logo {
@@ -120,9 +121,32 @@ footer {
     text-align: center;
 }
 
-.asideGuests {
+.asideGuestSection {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 10em;
+}
+
+.asideGuests {
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+
+.guestList {
+    list-style-type: none;
+    margin-right: 2em;
+    background-color: slategray;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: .25em;
+    line-height: 100%;
+    border-radius: 4px;
+}
+
+.ulGuestList {
+    margin-top: -.5em;
 }
 
 .topLists {

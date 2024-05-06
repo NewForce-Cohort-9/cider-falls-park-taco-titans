@@ -22,9 +22,9 @@ document.addEventListener(
 )
 
 export const guestList = () => {
-    let html = "<ul>"
+    let html = "<ul class='ulGuestList'>"
     for (const guest of guests) {
-        html += `<li data-type="guest" data-id="${guest.id}" data-destination="${guest.destinationId}" data-name="${guest.name}">${guest.name}</li>`
+        html += `<li data-type="guest" data-id="${guest.id}" data-destination="${guest.destinationId}" data-name="${guest.name}" class='guestList'>${guest.name}</li>`
     }
     html += "</ul>"
     return html
